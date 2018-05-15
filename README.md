@@ -21,6 +21,11 @@ Absolutely! Start by simply cloning or downloading a copy of the repository and 
 
 MAVIC was authored by Filip Busic (the guy who likes cookies). Feel free to shoot a message to the author via [LinkedIn][3] if you have any questions or ideas on how to make MAVIC better.
 
+## TODO
+
+* Push to Cocoapods
+* Develop & integrate memory leak detection
+
 ## Credit
 
 To Uber for inspiring the creation of MAVIC with their release of [RIBs][4]. Note, if you're using Swift, [RIBs][4] may be a better fit. However, given that [RIBs][4] is not supported for Objective-C, this may create an impetus for trying MAVIC.
