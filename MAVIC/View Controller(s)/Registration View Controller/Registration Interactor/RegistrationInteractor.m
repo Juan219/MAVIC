@@ -11,7 +11,7 @@
 @implementation RegistrationInteractor
 
 #pragma mark - Public Methods
-- (BOOL)registerUser {
++ (BOOL)registerUser {
   // TODO: Implement some logic :)
   return YES;
 }

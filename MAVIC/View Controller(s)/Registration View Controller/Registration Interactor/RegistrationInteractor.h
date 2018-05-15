@@ -12,6 +12,6 @@
 @interface RegistrationInteractor : LoginInteractor
 
 /** Attempts to register a new user. */
-- (BOOL)registerUser;
++ (BOOL)registerUser;
 
 @end

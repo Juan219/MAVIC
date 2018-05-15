@@ -11,6 +11,6 @@
 @interface LoginInteractor : BaseInteractor
 
 /** Attempts to log the user in. */
-- (BOOL)logIn;
++ (BOOL)logIn;
 
 @end

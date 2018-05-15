@@ -11,6 +11,6 @@
 @interface HomeInteractor : BaseInteractor
 
 /** Demo method. Feel free to incorporate whatever you'd like here. */
-- (void)callSomeAPI;
++ (void)callSomeAPI;
 
 @end

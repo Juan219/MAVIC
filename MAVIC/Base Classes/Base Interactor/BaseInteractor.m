@@ -28,12 +28,17 @@
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
   NSMethodSignature *signature = [super methodSignatureForSelector:selector];
   if (signature == nil) {
-    signature = [self.receiverClass instanceMethodSignatureForSelector:selector];
+    signature = [self.receiverClass methodSignatureForSelector:selector];
+    if (signature == nil) {
+      signature = [self.receiverClass instanceMethodSignatureForSelector:selector];
+    }
   }
   return signature;
 }
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
-  if ([self.receiverClass instancesRespondToSelector:anInvocation.selector]) {
+  if ([self.receiverClass respondsToSelector:anInvocation.selector]) {
+    [anInvocation invokeWithTarget:self.receiverClass];
+  }else if ([self.receiverClass instancesRespondToSelector:anInvocation.selector]) {
     [anInvocation invokeWithTarget:[self.receiverClass new]];
   }else{
     [super forwardInvocation:anInvocation];

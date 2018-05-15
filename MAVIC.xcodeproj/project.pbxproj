@@ -21,6 +21,7 @@
 		0327BBFB209D95B10076C296 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0327BBFA209D95B10076C296 /* RegistrationViewController.m */; };
 		0327BBFF209D95C30076C296 /* RegistrationInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0327BBFE209D95C30076C296 /* RegistrationInteractor.m */; };
 		0327BC07209DA30D0076C296 /* MAVICTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0327BC06209DA30D0076C296 /* MAVICTests.m */; };
+		0327BDD420AA98DD0076C296 /* TestInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0327BDD320AA98DD0076C296 /* TestInteractor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		0327BC04209DA30D0076C296 /* MAVICTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAVICTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0327BC06209DA30D0076C296 /* MAVICTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAVICTests.m; sourceTree = "<group>"; };
 		0327BC08209DA30D0076C296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0327BDD220AA98DD0076C296 /* TestInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestInteractor.h; sourceTree = "<group>"; };
+		0327BDD320AA98DD0076C296 /* TestInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestInteractor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,10 +217,20 @@
 		0327BC05209DA30D0076C296 /* MAVICTests */ = {
 			isa = PBXGroup;
 			children = (
+				0327BDD120AA98C90076C296 /* TestInteractor */,
 				0327BC06209DA30D0076C296 /* MAVICTests.m */,
 				0327BC08209DA30D0076C296 /* Info.plist */,
 			);
 			path = MAVICTests;
+			sourceTree = "<group>";
+		};
+		0327BDD120AA98C90076C296 /* TestInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				0327BDD220AA98DD0076C296 /* TestInteractor.h */,
+				0327BDD320AA98DD0076C296 /* TestInteractor.m */,
+			);
+			path = TestInteractor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0327BDD420AA98DD0076C296 /* TestInteractor.m in Sources */,
 				0327BC07209DA30D0076C296 /* MAVICTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
