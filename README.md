@@ -2,7 +2,7 @@
 <img src="logo.png" alt="MAVIC"/>
 </p>
 
-MAVIC is a protocol oriented Objective-C design pattern that is the foundation of many iOS applications. The name MAVIC was inherited from its purpose, Model (Automatic) Interactor View Controller, however, instead of referring to it by its natural acronym MAIVC (note the spelling), the name MAVIC was born as more of a natural pronunciation of the pattern.
+MAVIC is an Objective-C design pattern that is the foundation of many iOS applications. The name MAVIC was inherited from its purpose, Model (Automatic) Interactor View Controller, however, instead of referring to it by its natural acronym MAIVC (note the spelling), the name MAVIC was born as more of a natural pronunciation of the pattern.
 
 The MAVIC pattern provides:
 * **Clean View Controller(s).** MAVIC separates the heavy lifting away from the view controller, allowing the class to be as decoupled as possible. This will not only benefit your code from a testing perspective, but will also ensure your design is more collaboratively inviting and developer accessible by not potentially adding extraneous lines of code for which the MVC pattern is notorious.
