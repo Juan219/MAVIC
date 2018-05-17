@@ -10,5 +10,4 @@
 #import "BaseInteractor.h"
 
 @interface BaseViewController : UIViewController <InteractorProtocol>
-
 @end

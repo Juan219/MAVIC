@@ -11,7 +11,7 @@
 @implementation LoginInteractor
 
 #pragma mark - Public Methods
-+ (BOOL)logIn {
+- (BOOL)logIn {
   // TODO: Implement some logic :)
   return YES;
 }

@@ -7,17 +7,18 @@
 //
 
 #import "BaseViewController.h"
-#import "BaseInteractor+Private.h"
 
 @implementation BaseViewController
 @synthesize interactor = _interactor;
 
-#pragma mark - Lazy loaders
+#pragma mark - Lazy Loaders
 - (BaseInteractor *)interactor {
   if (_interactor == nil) {
-    _interactor = [[BaseInteractor alloc] initWithReceiverClass:NSClassFromString([NSStringFromClass([self class])
-                                                                                   stringByReplacingOccurrencesOfString:@"ViewController"
-                                                                                   withString:@"Interactor"])];
+    Class interactorClass = NSClassFromString([NSStringFromClass([self class])
+                                               stringByReplacingOccurrencesOfString:@"ViewController"
+                                               withString:@"Interactor"]);
+    NSAssert(interactorClass, @"The interactor class wasn't found for that view controller. Make sure you follow the MAVIC paradigm, for example, LoginViewController would have a LoginInteractor.");
+    _interactor = [[interactorClass alloc] init];
   }
   return _interactor;
 }

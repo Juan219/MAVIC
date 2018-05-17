@@ -11,7 +11,7 @@
 @implementation HomeInteractor
 
 #pragma mark - Public Methods
-+ (void)callSomeAPI {
+- (void)callSomeAPI {
   // TODO: Implement some logic :)
 }
 

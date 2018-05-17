@@ -16,8 +16,4 @@ NS_PROTOCOL_REQUIRES_EXPLICIT_IMPLEMENTATION
 @end
 
 @interface BaseInteractor : NSObject
-
-/** This would point to the interactor class thats named after the view controller. I.e, the receiver class for LoginViewController would return LoginInteractor. */
-@property (nonatomic, strong, readonly) Class receiverClass;
-
 @end
