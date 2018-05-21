@@ -9,13 +9,23 @@ The MAVIC pattern provides:
 * **Testability and Versatility.** Classes in iOS must live as independently from each other as possible in order to be as reusable as possible. This is what MAVIC does with the (automatic) interactor, allowing each component to be tested individually, and then later be pieced together like a puzzle at the finish line. This leaves the view controller to solely pass information from the interactor to the view and not be responsible for any heavy duty work by itself.
 * **Dynamic Class Initializer.** The core concept behind MAVIC is [dynamically initializing interactors][2] and allowing you to send [unresolved messages][3] without disrupting the compiler. As an added bonus, being that the interactor is lazy loaded, it's only ever initialized when needed.
 
+## Installation
+
+The quickest way to get up and running would be through the use of cocoapods. Simply add the following line to your Podfile:
+
+```ruby
+pod 'MAVIC', '~> 1.0'
+```
+
+For a quick demonstration on how to use MAVIC, please see the `LoginViewController`'s .h/.m files located in the Example directory.
+ 
 ## How does it work?
 
 All of MAVICs magic is rooted in taking advantage of the Clang compiler. More specifically, by combining protocols with the [__kindof][1] keyword, we no longer have to specify which interactor we'll use for the respective view controller. This is then brought to life with the power of [dynamically initializing interactors][2] combined with lazy loading which gives us the benefit of automatically having an interactor ready without having to initialize it manually.
 
 ## Can I see it in action?
 
-Absolutely! Start by simply cloning or downloading a copy of the repository and run the example project. You could start exploring the power of MAVIC in the `LoginViewController.m` file.
+Absolutely! Start by simply cloning or downloading a copy of the repository and run `pod install` in the Example directory. You could then start exploring the power of MAVIC in the `LoginViewController.m` file.
 
 ## Who created it?
 
