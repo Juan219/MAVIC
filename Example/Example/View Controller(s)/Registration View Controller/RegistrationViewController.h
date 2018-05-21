@@ -6,8 +6,8 @@
 //  Copyright © 2018 Filip Busic. All rights reserved.
 //
 
-#import <MAVIC/MAVICViewController.h>
+#import "BaseViewController.h"
 
-@interface RegistrationViewController : MAVICViewController
+@interface RegistrationViewController : BaseViewController
 
 @end

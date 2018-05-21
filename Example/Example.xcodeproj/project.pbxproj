@@ -19,6 +19,7 @@
 		0352CAD920B21CF2004A6078 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352CACE20B21CF2004A6078 /* HomeViewController.m */; };
 		0352CADA20B21CF2004A6078 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352CAD120B21CF2004A6078 /* RegistrationViewController.m */; };
 		0352CADB20B21CF2004A6078 /* RegistrationInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352CAD420B21CF2004A6078 /* RegistrationInteractor.m */; };
+		0352CADF20B28070004A6078 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352CADE20B28070004A6078 /* BaseViewController.m */; };
 		701D7334084D2AD8C11F0123 /* libPods-ExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED51888FFD45B04D940C5540 /* libPods-ExampleTests.a */; };
 		C786C6F5C8A680FE9C7719B4 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC340958F1A835AF1085E78 /* libPods-Example.a */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,8 @@
 		0352CAD220B21CF2004A6078 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
 		0352CAD420B21CF2004A6078 /* RegistrationInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationInteractor.m; sourceTree = "<group>"; };
 		0352CAD520B21CF2004A6078 /* RegistrationInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationInteractor.h; sourceTree = "<group>"; };
+		0352CADD20B28070004A6078 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		0352CADE20B28070004A6078 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		1AC340958F1A835AF1085E78 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B9A6FB8FB60FAB30C08924 /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		7977046EDFEF8E9087CCC2F9 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		0352CAC320B21CF2004A6078 /* View Controller(s) */ = {
 			isa = PBXGroup;
 			children = (
+				0352CADC20B28061004A6078 /* Base View Controller */,
 				0352CAC420B21CF2004A6078 /* Login View Controller */,
 				0352CACA20B21CF2004A6078 /* Home View Controller */,
 				0352CAD020B21CF2004A6078 /* Registration View Controller */,
@@ -194,6 +198,15 @@
 				0352CAD420B21CF2004A6078 /* RegistrationInteractor.m */,
 			);
 			path = "Registration Interactor";
+			sourceTree = "<group>";
+		};
+		0352CADC20B28061004A6078 /* Base View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0352CADD20B28070004A6078 /* BaseViewController.h */,
+				0352CADE20B28070004A6078 /* BaseViewController.m */,
+			);
+			path = "Base View Controller";
 			sourceTree = "<group>";
 		};
 		66DE70E1A480EE2250753CFD /* Frameworks */ = {
@@ -358,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0352CAD620B21CF2004A6078 /* LoginViewController.m in Sources */,
+				0352CADF20B28070004A6078 /* BaseViewController.m in Sources */,
 				0352CADA20B21CF2004A6078 /* RegistrationViewController.m in Sources */,
 				0352CADB20B21CF2004A6078 /* RegistrationInteractor.m in Sources */,
 				0352CAD720B21CF2004A6078 /* LoginInteractor.m in Sources */,
