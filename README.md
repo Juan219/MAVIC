@@ -1,5 +1,5 @@
 <p align="center">
-<img src="logo.png" alt="MAVIC"/>
+<img src="https://github.com/IHEARTCOOKIES/MAVIC/blob/master/logo.png" alt="MAVIC"/>
 </p>
 
 MAVIC is an Objective-C design pattern that is the foundation of many iOS applications. The name MAVIC was inherited from its purpose, Model (Automatic) Interactor View Controller, however, instead of referring to it by its natural acronym MAIVC (note the spelling), the name MAVIC was born as more of a natural pronunciation of the pattern.
@@ -20,11 +20,6 @@ Absolutely! Start by simply cloning or downloading a copy of the repository and 
 ## Who created it?
 
 MAVIC was authored by Filip Busic (the guy who likes cookies). Feel free to shoot a message to the author via [LinkedIn][4] if you have any questions or ideas on how to make MAVIC better.
-
-## TODO
-
-* Push to Cocoapods
-* Develop & integrate memory leak detection
 
 ## Credit
 
