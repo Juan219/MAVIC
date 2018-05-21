@@ -4,6 +4,9 @@
 build/
 DerivedData
 
+# Carthage related files
+Carthage/Build
+
 ## Pod related files
 Pods/
 Podfile.lock
