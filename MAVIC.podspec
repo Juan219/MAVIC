@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'MAVIC is an Objective-C design pattern that is the foundation of many iOS applications. MAVIC works by separating the heavy lifting away from the view controller, allowing the class to be as decoupled as possible. This will not only benefit your code from a testing perspective, but will also ensure your architecture is more collaboratively inviting and developer accessible by not potentially adding extraneous lines of code for which the MVC pattern is notorious.'
 
   s.homepage         = 'https://github.com/IHEARTCOOKIES/MAVIC'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
